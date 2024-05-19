@@ -56,20 +56,20 @@ Array(200).fill().forEach(addStar);
 
 // Add Background
 
-const spaceTexture = new THREE.TextureLoader().load('./public/space.jpg');
+const spaceTexture = new THREE.TextureLoader().load('./space.jpg');
 scene.background = spaceTexture;
 
 // Add Pasha
 
-const pashaTexture = new THREE.TextureLoader().load('./public/pasha-bw.jpg');
+const pashaTexture = new THREE.TextureLoader().load('./pasha-bw.jpg');
 const pasha = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: pashaTexture }));
 
 scene.add(pasha);
 
 // Add Mars
 
-const marsTexture = new THREE.TextureLoader().load('./public/mars.jpeg');
-const normalTexture = new THREE.TextureLoader().load('normal.jpeg');
+const marsTexture = new THREE.TextureLoader().load('./mars.jpeg');
+const normalTexture = new THREE.TextureLoader().load('./normal.jpeg');
 
 const mars = new THREE.Mesh(
 	new THREE.SphereGeometry(3, 32, 32),
