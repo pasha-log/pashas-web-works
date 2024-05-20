@@ -7,6 +7,8 @@ canvas {
 :root {
 	--dark-bg: rgba(15, 15, 15, 0.95);
 	--spacing: 350px;
+	--blue: #0000ff;
+	--white: #ffffff;
 
 	font-family: "Encode Sans Expanded", sans-serif;
 	font-weight: 400;
@@ -14,37 +16,26 @@ canvas {
 	overflow-x: hidden;
 }
 
-/* body {
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
-	background-color: white;
-	height: 100vh;
-} */
-
-.cursor {
-	pointer-events: none;
-	position: fixed;
-	display: block;
-	border-radius: 0;
-	mix-blend-mode: difference;
-	top: 0;
-	left: 0;
-	z-index: 9999999999999999;
+body::-webkit-scrollbar {
+	width: .25rem;
 }
 
-.circle {
-	position: absolute;
-	display: block;
-	width: 26px;
-	height: 26px;
-	border-radius: 20px;
-	background-color: #fff;
+body::-webkit-scrollbar-track {
+	background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: var(--blue);
+}
+
+::selection {
+	background: var(--blue);
+	color: var(--white);
 }
 
 main {
 	width: 100vw;
-	color: white;
+	color: var(--white);
 	z-index: 99;
 	position: absolute;
 	width: 100%;
@@ -96,7 +87,7 @@ blockquote {
 
 blockquote p {
 	color: black;
-	background-color: white;
+	background-color: var(--white);
 	font-size: 4rem;
 	display: inline;
 	line-height: 1;
@@ -104,4 +95,24 @@ blockquote p {
 
 .left {
 	grid-column: 6 / 12;
+}
+
+.cursor {
+	pointer-events: none;
+	position: fixed;
+	display: block;
+	border-radius: 0;
+	mix-blend-mode: difference;
+	top: 0;
+	left: 0;
+	z-index: 9999999999999999;
+}
+
+.circle {
+	position: absolute;
+	display: block;
+	width: 26px;
+	height: 26px;
+	border-radius: 20px;
+	background-color: var(--white);
 }
