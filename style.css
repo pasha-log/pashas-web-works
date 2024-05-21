@@ -16,6 +16,10 @@ canvas {
 	overflow-x: hidden;
 }
 
+a {
+	text-decoration: none;
+}
+
 body::-webkit-scrollbar {
 	width: .25rem;
 }
@@ -97,6 +101,8 @@ blockquote p {
 	grid-column: 6 / 12;
 }
 
+/* Cursor Follow Effect */
+
 .cursor {
 	pointer-events: none;
 	position: fixed;
@@ -115,4 +121,10 @@ blockquote p {
 	height: 26px;
 	border-radius: 20px;
 	background-color: var(--white);
+}
+
+/* Social Media Icons */
+
+img {
+	width: 3rem;
 }
