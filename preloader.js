@@ -1,5 +1,9 @@
 let overlayElement = document.querySelector('.overlay');
 let counterElement = document.querySelector('.counter');
+
+let rootElement = document.documentElement;
+rootElement.style.overflowY = 'hidden';
+
 function startLoader() {
 	let currentValue = 0;
 
@@ -39,5 +43,6 @@ gsap.to('.bar', 1.5, {
 	onComplete: function() {
 		overlayElement.style.display = 'none';
 		counterElement.style.display = 'none';
+		rootElement.style.overflowY = 'auto';
 	}
 });
