@@ -11,31 +11,25 @@
   </head>
   <body>
 
-    <div class="cursor">
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
+    <!-- Preloader -->
+    <h1 class="counter">0</h1>
+    <div class="overlay">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
     </div>
 
+    <!-- 3D Background -->
     <canvas id="bg"></canvas>   
 
+    <!-- Main content -->
     <main>
 
       <header>
@@ -48,7 +42,7 @@
             target="_blank"
             rel="noreferrer"
           >
-          <img src="./public/gmail.svg" alt="Description of image"/>
+          <img src="/gmail.svg" alt="Description of image"/>
           </a>
           <a
             class=""
@@ -56,7 +50,7 @@
             target="_blank"
             rel="noreferrer"
           >
-          <img src="./public/github.svg" alt="Description of image"/>
+          <img src="/github.svg" alt="Description of image"/>
           </a>
           <a
             class=""
@@ -64,7 +58,7 @@
             target="_blank"
             rel="noreferrer"
           >
-          <img src="./public/linkedin.svg" alt="Description of image"/>
+          <img src="/linkedin.svg" alt="Description of image"/>
           </a>
         </div>
       </header>
@@ -124,6 +118,32 @@
         <p>More coming soon!</p>
       </blockquote>
 
+    <!-- Cursor effect -->
+    <div class="cursor">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script type="module" src="/preloader.js"></script>
     <script type="module" src="/main.js"></script>
     <script type="module" src="/cursor.js"></script>
   </body>
